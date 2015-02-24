@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# searches occurences of "debugger", "byebug" or "console.log" inside tracked files
+git grep -In -e byebug -e debugger -e console.log -- $(git ls-files | grep -v Gemfile)

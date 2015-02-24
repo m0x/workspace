@@ -1,0 +1,17 @@
+#!/bin/sh
+
+if OCCURENCES=$(git grep -In -e byebug -e debugger -e console.log -- `git ls-files | grep -v Gemfile`);
+then
+  echo "Debugger calls found in project files: \n"
+  echo "$OCCURENCES\n"
+  while true
+  do
+    read -p " Are you sure you want to commit ? (y/n):  " alternative
+    case $alternative in
+      [Yy]* ) exit 0; break;;
+      [Nn]* ) exit 1;;
+      * ) echo "Please answer yes (y) or no (n)";;
+    esac
+  done
+fi
+exit 0

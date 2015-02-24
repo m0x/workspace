@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# shows a formatted graph of the log
+git log --graph --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=short
