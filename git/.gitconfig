@@ -1,0 +1,20 @@
+[user]
+	name = m0x
+	email = maxime.jonckiere@gmail.com
+[credential]
+	helper = cache
+[core]
+	editor = vim
+	excludesfile = /home/maxime/.gitignore_global
+	autocrlf = input
+[color]
+	diff = auto
+	ui = auto
+[push]
+	default = upstream
+[diff]
+	ool = vimdiff
+[merge]
+	tool = vimdiff
+[difftool]
+  prompt = false

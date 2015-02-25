@@ -1,0 +1,6 @@
+.idea/
+*.orig
+*.swp
+tags
+gems.tags
+
